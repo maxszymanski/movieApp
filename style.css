@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,6 +12,7 @@
 }
 
 body {
+	font-family: 'Barlow', sans-serif;
 background-color: var(--primary-color);
 
 }
@@ -50,6 +52,7 @@ border-radius: 3px;
 }
 .movie img {
 width: 100%;
+max-height: 300px;
 }
 .movie-info {
 	display: flex;
@@ -88,7 +91,16 @@ width: 100%;
 	max-height: 100%;
 	transform: translateY(101%);
 	transition: transform 0.3s ease-in;
+	overflow: scroll;
+	line-height: 150%;
+	background-color: rgb(199, 196, 244);
+}
+.overview p {
+	margin-top: 1em;
 }
 .movie:hover .overview {
 	transform: translateY(0);
+}
+.hide {
+	display: none;
 }
